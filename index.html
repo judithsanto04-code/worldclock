@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   <head>
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -14,26 +16,28 @@
   <h1>
     World clock
   </h1>
-  <select>
+  <select id="city">
     <option value="">Select a city</option>
-    <option value="">Harare</option>
-    <option value="">Capetown</option>
-    <option value="">Sandton</option>
+    <option value="Zimbabwe/Harare">Harare</option>
+    <option value="South Africa/Capetown">Capetown</option>
+    <option value="Current">My current locations</option>
   </select>
-  <div class="city">
+
+  <div id="cities">
+  <div class="city" id="  Pretoria">
     <div>
     <h2>Pretoria</h2>
-    <div class="date">January 06th 2026</div>
+    <div class="date"></div>
     </div>
 
-    <div class="time">23:50 PM</div>
+    <div class="time"></div>
   </div>
-  <div class="city">
+  <div class="city" id="Harare">
     <div>
-    <h2>Sandton</h2>
-    <div class="date">January 06th 2026</div>
+    <h2>Harare</h2>
+    <div class="date"></div>
     </div>
-    <div class="time">23:50 PM</div>
+    <div class="time"></div>
   </div>
   </div>
   <footer>
